@@ -1,0 +1,2 @@
+# lifecyclehandler
+一个支持生命周期感应的Handler，这样使用时就不用在onDestroy时由调用者释放handler中资源了，避免了内存泄露。
