@@ -1,0 +1,3 @@
+include ':lifecyclehandler'
+include ':app'
+rootProject.name = "LifeCycleHandler"
