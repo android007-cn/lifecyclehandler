@@ -6,12 +6,12 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 
-class CActivity : AppCompatActivity() {
-    private val tag = CActivity::class.java.name
+class HandlerActivity : AppCompatActivity() {
+    private val tag = HandlerActivity::class.java.name
     private val handler = Handler(Looper.getMainLooper())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_c)
+        setContentView(R.layout.activity_handler)
         handler.postDelayed({
             Log.v(tag, "handler run")
         }, 5000)

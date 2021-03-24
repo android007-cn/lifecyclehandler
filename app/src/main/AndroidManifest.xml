@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CActivity" />
-        <activity android:name=".BActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".LifecycleHandlerActivity" />
     </application>
 
 </manifest>

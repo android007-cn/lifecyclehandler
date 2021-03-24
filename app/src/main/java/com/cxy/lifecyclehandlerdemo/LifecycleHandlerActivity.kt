@@ -4,13 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Looper
 import android.util.Log
+import com.cxy.lifecyclehandler.LifecycleHandler
 
-class BActivity : AppCompatActivity() {
-    private val tag = BActivity::class.java.name
+class LifecycleHandlerActivity : AppCompatActivity() {
+    private val tag = LifecycleHandlerActivity::class.java.name
     private val handler = LifecycleHandler(Looper.getMainLooper(),this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_b)
+        setContentView(R.layout.activity_life)
         handler.postDelayed({
             Log.v(tag, "handler run")
         }, 5000)

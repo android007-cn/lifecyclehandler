@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         button.setOnClickListener {
-            startActivity(Intent(this, BActivity::class.java))
+            startActivity(Intent(this, HandlerActivity::class.java))
         }
         button2.setOnClickListener {
-            startActivity(Intent(this, CActivity::class.java))
+            startActivity(Intent(this, LifecycleHandlerActivity::class.java))
         }
     }
 }
